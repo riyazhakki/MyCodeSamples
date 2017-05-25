@@ -1,0 +1,36 @@
+
+OBJ = .
+BIN = ../bin
+HEADER = .
+SRC = .
+
+all : startup shutdown server client deposit windup clean
+
+$(BIN)deposit :	 $(SRC)/deposit.c $(HEADER)/sb.h $(OBJ)/msg.o
+				cc -o $(BIN)/deposit $(SRC)/deposit.c $(OBJ)/msg.o
+
+$(BIN)startup	:	$(SRC)/startup.c
+				cc -o $(BIN)/startup $(SRC)/startup.c
+
+$(BIN)shutdown : 	$(SRC)/shutdown.c 
+				cc -o $(BIN)/shutdown $(SRC)/shutdown.c
+
+$(BIN)server:$(SRC)/server.c $(HEADER)/dbase.h $(OBJ)/msg.o $(OBJ)/dynamic.o $(OBJ)/sem.o
+			cc -o $(BIN)/server $(SRC)/server.c $(OBJ)/msg.o $(OBJ)/dynamic.o $(OBJ)/sem.o
+
+$(BIN)client :  	$(SRC)/client.c $(HEADER)/dbase.h $(OBJ)/msg.o
+				cc -o $(BIN)/client $(SRC)/client.c $(OBJ)/msg.o
+
+$(OBJ)/dynamic.o : $(SRC)/dynamic.c $(HEADER)/dbase.h $(OBJ)/msg.o $(OBJ)/sem.o
+				cc -c $(SRC)/dynamic.c $(OBJ)/msg.o $(OBJ)/sem.o
+
+$(BIN)windup	: 	$(SRC)/windup.c $(HEADER)/dbase.h $(OBJ)/msg.o
+				cc -o $(BIN)/windup $(SRC)/windup.c $(OBJ)/msg.o
+
+$(OBJ)/msg.o	:	$(SRC)/msg.c $(HEADER)/msg.h
+				cc -c $(SRC)/msg.c
+
+$(OBJ)/sem.o	: 	$(SRC)/sem.c $(HEADER)/sem.h
+				cc -c $(SRC)/sem.c
+
+clean	:

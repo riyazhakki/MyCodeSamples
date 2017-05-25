@@ -1,0 +1,10 @@
+# sample script : ex08_sample8
+
+func ( ) {
+	echo this world is $1
+	echo we have got a $1 course here
+	echo to help us build a $1 career
+}
+func good
+
+# invoke the script and observe the output

@@ -1,0 +1,31 @@
+
+all : startup shutdown server client deposit windup clean
+
+deposit : deposit.c sb.h msg.o
+			cc -o deposit deposit.c msg.o
+
+startup	:	startup.c
+			cc -o startup startup.c
+
+shutdown : shutdown.c 
+			cc -o shutdown shutdown.c
+
+server	: server.c dbase.h msg.o dynamic.o sem.o
+			cc -o server server.c msg.o dynamic.o sem.o
+
+client : client.c dbase.h msg.o
+			cc -o client client.c msg.o
+
+dynamic.o : dynamic.c dbase.h msg.o sem.o
+			cc -c dynamic.c msg.o sem.o
+
+windup	: windup.c dbase.h msg.o
+			cc -o windup windup.c msg.o
+
+msg.o	:	msg.c msg.h
+			cc -c msg.c
+
+sem.o	: sem.c sem.h
+			cc -c sem.c
+
+clean	:

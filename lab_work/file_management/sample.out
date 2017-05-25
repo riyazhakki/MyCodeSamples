@@ -1,0 +1,21 @@
+
+# include "myheader1.h"
+/*************< start of myheader1.h >************/
+# include "myheader2.h"
+/*************< start of myheader2.h >************/
+# include "myheader1.h"
+
+
+
+I am in myheader2...
+/*************< end of myheader2.h >************/
+
+
+I am in myheader1...
+/*************< end of myheader1.h >************/
+
+
+main () {
+	int i;
+	printf ( "This is a sample file\n" );
+}

@@ -1,0 +1,5 @@
+Sample make script for a non-compilation problem */
+
+Problem is to make fresh coffee given the ingredients. The user needs to create files with names matching the ingredients required, in the current directory in order to make coffee. If any one of the ingredients is touched, and the make command reissued, then make will list only those steps that are absolutely necessary to make the fresh coffee.  
+
+Makefile to making cofee 

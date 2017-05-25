@@ -1,0 +1,22 @@
+ex_no.		Description
+======		==============
+
+01			printing the full range of escaped characters:
+			\a \b \c ... \z with printf.
+
+02			Convert Fahrenheit to Celsius.
+
+03			Copy input to output, replacing series of 
+			consecutive spaces by a single space.
+
+04			Replace tabs from the input by proper 
+			number of spaces till next tab stop.
+
+05			Replace series of spaces (and tabs) by the 
+			minimum number of tab characters and spaces.
+
+06			Fold long input lines after the last non-blank 
+			character before nth column of input.
+
+07			Remove all comments from a C program.
+

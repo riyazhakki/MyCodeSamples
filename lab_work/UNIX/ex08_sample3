@@ -1,0 +1,18 @@
+# script file : ex08_sample3
+
+for program in abc def
+do
+	vi $program.c
+	cc $program $program.c
+	$program
+done
+
+#  run the script with the command sample3
+#  output expected is the execution of the commands
+#		(1)	vi abc.c
+#		(2) cc -o abc abc.c
+#		(3) abc
+#		(4) vi def.c
+#		(5) cc -o def def.c
+# 		(6) def
+	

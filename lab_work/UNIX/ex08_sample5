@@ -1,0 +1,11 @@
+# script file : ex08_sample5
+
+parameter = 
+until test "$parameter" = "riyaz"
+do
+	echo enter your name
+	read parameter
+done
+
+# run the script and keep typing different names
+# program exits only after "riyaz" is typed

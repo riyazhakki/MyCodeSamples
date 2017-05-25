@@ -1,0 +1,5 @@
+scp file id@ip  : Trasnfer file to other user
+cdecl			: explain c statements
+mesg n/y		: dissable/enable messaging
+locate			: find files
+

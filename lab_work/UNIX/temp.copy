@@ -1,0 +1,59 @@
+a.out
+ex01_buf.c
+ex01_printpid.c
+ex01_printppid.c
+ex02_runls1.c
+ex02_runls.c
+ex03_myshell.c
+ex04_daemon.c
+ex05_pipe.c
+ex05_redirect_in.c
+ex05_redirect_out.c
+ex06.c
+ex07_myshell.c
+ex08_sample1
+ex08_sample2
+ex08_sample3
+ex08_sample4
+ex08_sample5
+ex08_sample6
+ex08_sample7
+ex08_sample8
+ex09_myrc_test
+ex09_v1.c
+ex10_minishell.c
+ex10_myshell.c
+file
+temp
+temp2
+test.c
+total 132
+-rwxrwxr-x 1 b2931 b2931 9716 Dec  6 18:58 a.out
+-rw-rw-r-- 1 b2931 b2931  169 Dec  1 16:04 ex01_buf.c
+-rw-rw-r-- 1 b2931 b2931  248 Dec  1 14:59 ex01_printpid.c
+-rw-rw-r-- 1 b2931 b2931  339 Dec  1 15:12 ex01_printppid.c
+-rw-rw-r-- 1 b2931 b2931  399 Dec  1 17:17 ex02_runls1.c
+-rw-rw-r-- 1 b2931 b2931  317 Dec  1 17:16 ex02_runls.c
+-rw-rw-r-- 1 b2931 b2931 1167 Dec  4 12:07 ex03_myshell.c
+-rw-rw-r-- 1 b2931 b2931  327 Dec  3 17:06 ex04_daemon.c
+-rw-rw-r-- 1 b2931 b2931 1267 Dec  6 14:25 ex05_pipe.c
+-rw-rw-r-- 1 b2931 b2931 1368 Dec  4 14:50 ex05_redirect_in.c
+-rw-rw-r-- 1 b2931 b2931  827 Dec  4 14:50 ex05_redirect_out.c
+-rw-rw-r-- 1 b2931 b2931  157 Dec  4 11:56 ex06.c
+-rw-rw-r-- 1 b2931 b2931 3496 Dec  5 10:30 ex07_myshell.c
+-rwxrwxr-x 1 b2931 b2931  249 Dec  4 17:10 ex08_sample1
+-rwxrwxr-x 1 b2931 b2931  142 Dec  4 17:32 ex08_sample2
+-rwxrwxr-x 1 b2931 b2931  309 Dec  4 17:50 ex08_sample3
+-rwxrwxr-x 1 b2931 b2931  286 Dec  4 17:59 ex08_sample4
+-rwxrwxr-x 1 b2931 b2931  217 Dec  4 18:10 ex08_sample5
+-rwxrwxr-x 1 b2931 b2931  230 Dec  4 18:13 ex08_sample6
+-rwxrwxr-x 1 b2931 b2931  186 Dec  4 18:16 ex08_sample7
+-rwxrwxr-x 1 b2931 b2931  192 Dec  4 18:18 ex08_sample8
+-rw-rw-r-- 1 b2931 b2931  473 Dec  5 09:01 ex09_myrc_test
+-rw-rw-r-- 1 b2931 b2931 2034 Dec  5 08:59 ex09_v1.c
+-rw-rw-r-- 1 b2931 b2931 5281 Dec  6 18:58 ex10_minishell.c
+-rw-rw-r-- 1 b2931 b2931 4459 Dec  5 16:00 ex10_myshell.c
+-rwxrwxr-x 1 b2931 b2931   35 Dec  5 15:55 file
+-rw------- 1 b2931 b2931  363 Dec  6 18:59 temp
+-rw------- 1 b2931 b2931   12 Dec  5 17:15 temp2
+-rw-rw-r-- 1 b2931 b2931  379 Dec  6 15:57 test.c

@@ -1,0 +1,9 @@
+# sample scrip : ex08_sample7
+
+	cat << !
+		echo this is standard input !
+	!
+	echo job is done
+# executing the script will get the outcome:
+#	echo this is standard input !
+#		job is done

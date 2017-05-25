@@ -1,0 +1,16 @@
+# script file : ex08_sample4
+
+if test -f $1
+then
+	echo my file $1 is regular
+elif test -d $1
+then
+	echo my file $1 is a directory
+else
+	echo my file is neither a directory \
+		not a regular file
+
+	echo or probably does not exit
+fi
+
+# run the script with command ex08_sample4 <filename>

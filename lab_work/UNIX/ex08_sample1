@@ -1,0 +1,11 @@
+# shell script file : ex08_sample1
+
+echo $1
+cat $2
+echo $3
+
+# run this script with the caommand
+# ex08_sample1 "world is fine" /etc/passwd "world is still fine"
+# Output expected is the message "world is fine"
+# followed by contents of /etc/passwd
+

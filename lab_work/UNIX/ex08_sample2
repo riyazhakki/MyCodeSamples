@@ -1,0 +1,8 @@
+# shell script file : ex08_sample2
+
+for i do
+	echo next parameter is $i
+done
+
+# run the script with the command
+# sample2 this is only a test

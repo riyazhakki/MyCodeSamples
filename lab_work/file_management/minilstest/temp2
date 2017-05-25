@@ -1,0 +1,10 @@
+total 44
+-rwxrwxr-x 1 b2931 b2931 8720 Jun 20 19:50 a.out*
+-rw-rw-r-- 1 b2931 b2931 3978 Jun 20 18:11 ls.c
+-rw-rw-r-- 1 b2931 b2931 2563 Jun 19 19:53 mini_ls.c
+-rw-rw-r-- 1 b2931 b2931 4754 Jun 20 19:50 myls.c
+drwxrwxr-x 3 b2931 b2931 4096 Jun 19 18:20 newdir/
+-rw-rw-r-- 1 b2931 b2931  172 Jun 19 18:15 statex.c
+-rw-rw-r-- 1 b2931 b2931  704 Jun 20 19:50 temp
+-rw-rw-r-- 1 b2931 b2931    0 Jun 20 19:51 temp2
+drwxrwxr-x 2 b2931 b2931 4096 Jun 19 19:07 zdir/

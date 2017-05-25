@@ -1,0 +1,11 @@
+/* ex09_myrc_test.c : a sample appliction
+	A very elementary script file processing program. There must a .myrc file in the home directory of the user for the script to be read. Script can only specify width of integers and whether to clear screen at start.
+		Sample contents of .myrc file :
+
+		# This is a comment line
+		int = 10
+		clear = y
+
+		Change the width above and rerun the program
+------------------------------------------------------------------------------*/
+

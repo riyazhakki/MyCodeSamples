@@ -1,0 +1,9 @@
+app		:	app.o stack.o
+			@echo linking
+			cc -o app app.o stack.o
+
+app.o	:	app.c 
+			cc -c app.c
+
+stack.o:	stack.c  
+			cc -c stack.c

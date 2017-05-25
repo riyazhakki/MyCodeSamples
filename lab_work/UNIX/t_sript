@@ -1,0 +1,6 @@
+if eval date +%H  gt 14
+then
+echo "TRUE"
+else
+echo "FALSE"
+fi

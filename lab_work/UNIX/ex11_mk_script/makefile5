@@ -1,0 +1,12 @@
+app		:	app.o stack.o
+			@echo linking
+			cc -o app app.o stack.o
+
+app.o	:	stack.h
+
+stack.o:	stack.h 
+
+clean :
+		-unlink ( "app.o" );
+		-unlink ( "stack.o" );
+		

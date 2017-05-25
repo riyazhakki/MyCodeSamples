@@ -1,0 +1,6 @@
+/* Sample program */
+
+# include <stdio.h>
+main () {
+	printf ("Hello World...");		/* print on screen */
+}

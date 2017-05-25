@@ -1,0 +1,10 @@
+alias s='startup'
+alias t='shutdown'
+alias m='make'
+alias c='clear'
+alias cl='client'
+alias p=ps
+
+echo "s=>startup"
+echo "t=>shutdown"
+echo "m=>make"

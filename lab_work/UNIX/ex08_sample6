@@ -1,0 +1,13 @@
+# script file : ex08_sample6
+
+for i
+do
+	case $i in
+		-a) echo given option is a;;
+		-b|-c) echo given option is b or c;;
+		*) echo given option is illegal;;
+	esac
+done
+
+# run the script with the command
+# ex08_sample6 -a -b -c -d
