@@ -1,0 +1,41 @@
+mutation createJob {
+    createJob(
+        input:{
+            scriptContent: "%s",
+            name: "pbsk8sconnector",
+            {{- if (IsNotEmpty .Queue) }}
+            queue : {name: "{{.Queue}}"},
+            {{- else }}
+            queue: {name: "workq"},
+            {{- end}}
+            {{- if (IsNotEmpty .Project) }}
+            category: "{{.Project}}",
+            {{- end}}
+            env:[{name: "ADMIN" value:"%s"}, 
+                {name: "COUNTER" value: "%d"}, 
+                {name: "DPNS" value:"%s"},
+                {name: "LOGLEVEL" value:"%s"}]
+            resourcesRequested:{
+                jobPlacement: 1
+                jobPlacementSharing: 2
+                jobResources:{
+                    index:"",
+                    slots:"%d",
+                    physicalMemory:"%s",
+                    gpus:"%d"
+                    customResources:[{ name: "k8s_connector", value: "1" }]
+                    {{- if (IsNotEmpty .Walltime) }}
+                    wallClockTime: {{.Walltime}}
+                    {{- end}}
+                }
+            }
+        }
+    ) {
+        node {
+            jobId
+        }
+        error {
+            errorMessage
+        }
+	}
+}
